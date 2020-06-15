@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>DOM Exercise 4</title>
+        </head>
+
+        <body>
+
+            <script language = "JavaScript">
+                function squareArea() { // function for area of a square
+                    const side = document.form.txtSides.value;
+                    const area = side * side;
+                    document.write("<p>The area of the square = " + area +  "</p>");
+                }
+            </script>
+
+            <form name = "form">
+                <!--enter in the side lengths-->
+                Enter sides of the square <input type = "text" name = "txtSides" size = 20>
+                <br>
+                <!--calculate the area button-->
+                <input type = "button" value = Calculate onClick = 'squareArea();'>
+            </form>
+
+        </body>
+    </html>

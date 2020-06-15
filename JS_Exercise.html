@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>JS Exercise</title> <!--title of exercise-->
+            <h1>JavaScript Exercise</h1> <!--header of exercise-->
+
+        </head>
+
+        <body>
+        <h2>Square Number</h2> <!--header for this function-->
+        <script type = "text/javascript">
+            // square a num from a given num
+            function squareNumber(n) {
+                const result = n * n;
+                console.log("The result of squaring number " + n + " is: " + result);
+                return result;
+            }
+
+            //find the half num of given num
+            function halfNumber(a) {
+                const answer = parseInt(a)/2;
+                console.log("Half of " + a + " is: " + answer);
+                return(answer);
+                }
+
+            // find the percent of two nums
+            function percentOf(b) {
+                const num1 = document.getElementById('b').value;
+                const num2 = document.getElementById('c').value;
+                const per = (num1/num2) * 100;
+                console.log(num1 + " is " + per + "% of " + num2);
+            }
+
+            //find the area of a circle from num inputed
+            function areaOfCircle(d) {
+                const rad = document.getElementById('d').value;
+                const area = (Math.PI * rad * rad);
+                console.log("The area for a circle with radius " + rad + " is " + area)
+                console.log("The rounded area is: " + area.toFixed(2));
+                return area;
+            }
+
+            //function that will take an argument and half it, square that, find area of that, and find the percent of that
+            function oneArgument(e) {
+                const num = document.getElementById('e').value;
+                const result1 = parseInt(num) / 2;
+                const result2 = result1 * result1;
+                const result3 = (Math.PI * result2 * result2);
+                const result4 = (result2 / result3) * 100;
+                console.log("The half number of " + num + " is: " + result1 +
+                            "\nThe squared number of " + result1 + " is: " + result2 +
+                            "\nThe area of " + result2 + " is: " + result3.toFixed(2) +
+                            "\nThe percent of the area from " + result3.toFixed(2) + " and " + result2 + " is: " + result4.toFixed(2) + "%");
+            }
+        </script>
+
+        <input type = "number" name = "a" id = "a">
+            <br>
+                <!--button to find result for squared num-->
+                <button
+                    onclick = "squareNumber(document.getElementById('a').value)">
+                    Square Root
+                </button>
+
+        <h2>Half Number</h2>
+            <input type = "number" name = "a" id = "a">
+                <br>
+                    <!--button for half num-->
+                    <button
+                        onclick = "halfNumber(document.getElementById('a').value)">
+                        Half Number
+                    </button>
+        <h2>Percent Of</h2>
+         <label>First Number: </label> <!--need label for first num-->
+           <input type = "number" name = "b" id = "b">
+         <label>Second Number: </label> <!--need label for second num-->
+            <input type = "number" name = "c" id = "c">
+                <br>
+                    <!--button for percent of-->
+                    <button type = "button"
+                        onclick = "percentOf()">
+                        Percent Of
+                    </button>
+        <h2>Area Of Circle</h2>
+            <input type = "number" name = "d" id = "d">
+                <br>
+                    <!--button for area of circle-->
+                    <button
+                        onclick = "areaOfCircle(document.getElementById('d'))">
+                        Area Of Circle
+                    </button>
+        <h2>One Argument</h2>
+            <input type = "number" name = "e" id = "e">
+                <br>
+                    <!--button for one argument-->
+                    <button type = "button"
+                        onclick = "oneArgument(document.getElementById('e'))">
+                        Find Results
+                    </button>
+        </body>
+    </html>

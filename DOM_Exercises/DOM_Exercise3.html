@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <!--Used css for the table as opposed to in the table in the body-->
+            <style>
+            table, td {
+              border: 1px solid black;
+            }
+            </style>
+        </head>
+
+        <body>
+
+            <p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
+
+            <!--Predetermined table here-->
+            <table id="sampleTable">
+              <tr>
+                <td>Row1 cell1</td>
+                <td>Row1 cell2</td>
+              </tr>
+              <tr>
+                <td>Row2 cell1</td>
+                <td>Row2 cell2</td>
+              </tr>
+              <tr>
+                <td>Row3 cell1</td>
+                <td>Row3 cell2</td>
+              </tr>
+            </table>
+            <br>
+
+            <!--Add buttons so we can utilize the functions to add and delete rows-->
+            <button type="button" onclick="deleteRow()">
+                Delete Row
+            </button>
+            <button type="button" onclick="addRow()">
+                Add Row!
+            </button>
+
+
+                <!--NOTE: you can delete all the rows but the max row adding is around 35 i lost track of counting-->
+            <script>
+                function addRow() { //function adds a row
+                  var table = document.getElementById("sampleTable"); // use getElementById for table here
+                  var row = table.insertRow(0); // insert as row using insertRow
+                  var c1 = row.insertCell(0); //insert a cell 1
+                  var c2 = row.insertCell(1); // insert a cell 2
+                  c1.innerHTML = "CELL 1";
+                  c2.innerHTML = "CELL 2";
+                }
+
+                function deleteRow() { // function deletes a row
+                   document.getElementById("sampleTable").deleteRow(0); // using deleteRow to delete a row
+        }
+            </script>
+
+        </body>
+    </html>

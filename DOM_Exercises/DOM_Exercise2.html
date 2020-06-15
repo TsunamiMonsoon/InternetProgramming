@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>DOM Exercise 2</title>
+        </head>
+
+        <body>
+
+        <script>
+            // function displays names
+            function getFormValue() {
+                const x = document.forms["form1"]["first"].value;
+                const y = document.forms["form1"]["last"].value;
+                document.write("First name: " + x);
+                document.write("Last name: " + y);
+            }
+        </script>
+
+        <!--Name form-->
+        <form id="form1" onsubmit="getFormvalue()">
+            First name: <input type="text" name="first" value="Alice">
+            <br>
+            Last name: <input type="text" name=“Last" value="Bob">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+        </body>
+    </html>
