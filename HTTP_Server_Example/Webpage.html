@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+
+            <style>
+              .button {
+                background-color: #E1C6F9;
+                border: none;
+                color: white;
+                padding: 20px 34px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                margin: 4px 2px;
+                cursor: pointer;
+              }
+            </style>
+
+            <center>
+                <!--buttons, some link to actual webpages but can be changed at any time for assignments-->
+                <a href="" class="button">Home</a> <!--Home button reloads page-->
+                <a href="https://github.com/TsunamiMonsoon" class="button">Github</a>
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_top_card%3Bn31ZDmmRR9yOXrRPOwjuYw%3D%3D" class="button">LinkedIn</a>
+                <a href="" class="button">Homework Two</a> <!--Empty for now-->
+                <a href="" class="button">Homework Three</a> <!--Empty for now-->
+            </center>
+
+            <title>Heather Willis's Homework One</title> <!--Title-->
+
+            <center>
+            <h1>Heather Willis' Website</h1>
+
+                <!--Section 1 image of me-->
+             <section>
+            <p>
+                <img border="0" alt="Picture of Me" src="https://mail.google.com/mail/u/0?ui=2&ik=d9d9c49a97&attid=0.1.1&permmsgid=msg-f:1668428850146252516&th=1727733311fb16e4&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ8_yMt7ca9CBRr-NYex9BDTuOA1WQLo3Y8gnJjlbnmMrcaBO9nWK2UQG4OOfQ3slNAjf8vpKwvlSFWdZWZdL15hhuQ6bDh3238yQ5l5zCAOjXQduly-1R3C1ZI&disp=emb" width="200"height="300">
+            </p>
+            </section>
+
+            </center>
+
+        </head>
+        <body onload = "pageLoaded()">
+
+        <script>
+
+          //alert that the page is loaded also pops up when hitting the home button which refreshes the page
+          function pageLoaded() {
+              alert("Page is loaded");
+          }
+
+          //once the txt is changed then an alert will display to welcome someone
+          function enterName(name) {
+              alert("Hi " + name + "!!!! Nice to see you viewing my page.");
+          }
+
+          //every time a key is pressed the console will display the following
+          function keyDown() {
+              console.log("You hit a key on your keyboard");
+          }
+
+          //txt color 1
+          function colorOne() {
+              document.getElementById("color").style.color = "#C6F9F5";
+          }
+
+          //txt color 2
+          function colorTwo() {
+              document.getElementById("color").style.color = "#E1C6F9";
+          }
+
+          //txt color 3
+          function colorThree() {
+              document.getElementById("color").style.color = "#F9C6F7";
+          }
+
+          //background color 1
+          function backgroundOne() {
+            document.body.style.backgroundColor = "Black";
+          }
+
+          //background color 2
+          function backgroundTwo() {
+            document.body.style.backgroundColor = "White";
+          }
+
+          //back ground color 3
+          function backgroundThree() {
+            document.body.style.backgroundColor = "#F9DDC6";
+          }
+        </script>
+
+            Please enter your name and then hit enter: <input type="text" name="txt" value="Name" onchange="enterName(this.value)" onkeydown = "keyDown()">
+
+            <center>
+                <!--Section 2 about me paragraph-->
+                <span id = "color">
+                <section>
+                 <h2>About Me!!!</h2>
+                    <p>
+                        I am 21 years old I'm from California but moved to Georgia when I was 12, however, I will always be a California girl as I miss the weather.
+                        I have a vegetable garden where I grow cucumbers, tomatoes, spinach, carrots, basil and parsley, but they are not ready for harvesting yet.
+                        My major is Computer Science and I'm most interested in machine learning, data science and cyber-security. I currently work as a software developer
+                        intern and have already been offered full time after I graduate, so I might do that for a couple of years, but I would rather research
+                        machine learning or work in cyber-security or data science. I like to play video games and sometimes make some, other hobbies are reading,
+                        listening to music, writing, watching Netflix and taking care of my puppy and vegetable garden. I desperately need to update my LinkedIn
+                        profile and Github, especially Github.
+
+                    </p>
+                </section>
+
+                <!--Section 3 puppy pic-->
+                <section>
+                    <p>
+                        <img border="0" alt="Puppy" src="https://gm1.ggpht.com/_YmGPEMRZnOGRAmOpSP38DtReqIyTZMvzEETGv0LF-QHn54dPdahPk0llMx2kYxwTbtCe1g2f7b5sSmjj5R4j9k9nBcEQ3AmTQbDiuNzDmpoLZzdghNOvxb3wP7NNvjVsbsH3gtGQ9EgRPMgeZS9NnsALN_-NxQUQajFuCeBDSB3I4VuZwmYT6Nwo4yqgGOc1NAM41IGW4ffR4MsvCKSskQOchfSAcuadHmfWmcGGC6r1i2YdJcRCnp6cmQXm3_PO_dTewi48L9jXUWQQ6P5KnPrw8XNsE8OorIIcKNwQjQbCeb4SeU1YmUbae3cNz07fb8pdHpdsrJfW8ca53JEZ7zj_rmJYZI2NTlSuJaaMmvHepr9lEDbJn7Ch3_uA4gABdPwObxxNqgO20bygQKymw9wqwHxBYXHJ_Zm6aY5tPPyy3cAjlHpzEkEphIy21OOPmXDvGd9SHmnwqizbVI9uXnakdYiigc88kDoJyft75gVCVaGkk2TceLtRXBP7dwET79Lgfg32LqkzAUWgzAQdrGdZAN7FjZ6QV7zKY6TNBDZQHNHEDX4uYHipHoJAs6Seckad5qhd1xTisMTo2TuNi1CK3w1Wj3YqjUzujzUC9kcGhfHD8qR1C31Lwc8xUnVjReS3Dk3R1mD6mTN41iv8d5fmgaLltChYcdHWSJtsgt2dXT8ol0YZqlOL3EQ2sEgYdLqZ72QHKJQaxW2fIkzICM9X6T50Y24F5i-kdo7N7eHBcpANBAL1ZviHdZfVm6-aj8=s0-l75-ft-l75-ft" width="200"height="300">
+                    </p>
+                </section>
+
+                <!--Section 4 explanation of puppy pic-->
+                <section>
+                  <h2>This is my puppy!!</h2>
+                    <p>
+                      Her name is Bailey and currently she is almost nine months old, she loves bones, laying under my desk on my feet as I work, walks, her ball
+                      and most importantly treats! I chose to display her and this picture because she looks like a kangaroo here to me and I thought it was too cute not to share.
+                      When I took this photo she had just stopped trying to lick me in the face after she succeeded and looks at the camera all sweet like because of it.
+                    </p>
+                </section>
+                </span>
+            </center>
+
+        <!--buttons to make txt and background change colors-->
+            <center>
+                <button type="button" class = "button" onclick="colorOne()">Make text light blue</button>
+                <button type="button" class = "button" onclick="colorTwo()">Make text lavender</button>
+                <button type="button" class = "button" onclick="colorThree()">Make Text light pink</button>
+                <button type="button" class = "button" onclick="backgroundOne()">Set background color black</button>
+                <button type="button" class = "button" onclick="backgroundTwo()">Set background color white</button>
+                <button type="button" class = "button" onclick="backgroundThree()">Set background color peach</button>
+            </center>
+
+        </body>
+    </html>
